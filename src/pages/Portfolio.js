@@ -9,6 +9,12 @@ import Image4 from '../img/portfolio/4.png';
 // import link
 import { Link } from 'react-router-dom';
 
+// import motion
+import { motion } from 'framer-motion';
+
+// import transition
+import { transition1 } from '../transitions';
+
 const Portfolio = () => {
   return <section className='section'>
     <div className='container mx-auto h-full relative'>
