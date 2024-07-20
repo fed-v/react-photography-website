@@ -5,8 +5,12 @@ export const CursorContext = createContext();
 
 // Create context provider
 const CursorProvider = ({ children }) => {
+
   // Cursor pointer state
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
+
+  // Cursor bg state
+  const [cursorBg, setCursorBg] = useState('default');
 
   useEffect(() => {
     const move = (e) => {
@@ -21,8 +25,19 @@ const CursorProvider = ({ children }) => {
     };
   }, []); // Added an empty dependency array to ensure useEffect runs once
 
+
+  // mouse enter handler
+  const mouseEnterHandler = () => {
+    setCursorBg('text');
+  };
+
+  // mouse leave handler
+  const mouseLeaveHandler = () => {
+    setCursorBg('default');
+  };
+
   return (
-    <CursorContext.Provider value={cursorPos}>
+    <CursorContext.Provider value={{ cursorPos, cursorBg, mouseEnterHandler, mouseLeaveHandler }}>
       {children}
     </CursorContext.Provider>
   );
