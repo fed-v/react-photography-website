@@ -32,6 +32,11 @@ const App = () => {
       backgroundColor: '#fff',
       mixBlendMode: 'difference',
     },
+    none: {
+      width: 0,
+      height: 0,
+      backgroundColor: 'transparent',
+    },
   };
 
   return (

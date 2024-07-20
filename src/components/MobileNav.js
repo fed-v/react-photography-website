@@ -53,7 +53,7 @@ const MobileNav = () => {
   }, [openMenu]);
 
   return (
-    <nav className='text-primary xl:hidden'>
+    <nav className='text-primary lg:hidden'>
       {/* nav open button */}
       <button
         onClick={() => setOpenMenu(true)}

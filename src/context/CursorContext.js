@@ -12,18 +12,28 @@ const CursorProvider = ({ children }) => {
   // Cursor bg state
   const [cursorBg, setCursorBg] = useState('default');
 
+  const mobileViewportIsActive = window.innerWidth <= 768;
+
   useEffect(() => {
-    const move = (e) => {
-      setCursorPos({ x: e.clientX, y: e.clientY });
-    };
 
-    window.addEventListener('mousemove', move);
+    if (!mobileViewportIsActive) {
+    
+      const move = (e) => {
+        setCursorPos({ x: e.clientX, y: e.clientY });
+      };
 
-    // remove event
-    return () => {
-      window.removeEventListener('mousemove', move);
-    };
-  }, []); // Added an empty dependency array to ensure useEffect runs once
+      window.addEventListener('mousemove', move);
+
+      // remove event
+      return () => {
+        window.removeEventListener('mousemove', move);
+      };
+
+    } else {
+      setCursorBg('none');
+    }
+
+  }, [mobileViewportIsActive]); // Added an empty dependency array to ensure useEffect runs once
 
 
   // mouse enter handler
