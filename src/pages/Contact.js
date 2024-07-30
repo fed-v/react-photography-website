@@ -1,15 +1,7 @@
 import React, { useContext } from 'react';
-
-// import images
-import WomanImg from '../img/contact/woman.png';
-
-// import motion
+import WomanImg from '../assets/images/contact/woman.png';
 import { motion } from 'framer-motion';
-
-// import transition
 import { transition1 } from '../transitions';
-
-// import cursor context
 import { CursorContext } from '../context/CursorContext';
 
 const Contact = () => {

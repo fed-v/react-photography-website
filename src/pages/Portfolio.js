@@ -1,21 +1,11 @@
 import React, { useContext } from 'react';
-
-// import image
-import Image1 from '../img/portfolio/1.png';
-import Image2 from '../img/portfolio/2.png';
-import Image3 from '../img/portfolio/3.png';
-import Image4 from '../img/portfolio/4.png';
-
-// import link
+import Image1 from '../assets/images/portfolio/1.png';
+import Image2 from '../assets/images/portfolio/2.png';
+import Image3 from '../assets/images/portfolio/3.png';
+import Image4 from '../assets/images/portfolio/4.png';
 import { Link } from 'react-router-dom';
-
-// import motion
 import { motion } from 'framer-motion';
-
-// import transition
 import { transition1 } from '../transitions';
-
-// import cursor context
 import { CursorContext } from '../context/CursorContext';
 
 const Portfolio = () => {

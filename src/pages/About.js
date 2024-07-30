@@ -1,18 +1,8 @@
 import React, { useContext } from 'react';
-
-// import images
-import WomanImg from '../img/about/woman.png';
-
-// import link
+import WomanImg from '../assets/images/about/woman.png';
 import { Link } from 'react-router-dom';
-
-// import motion
 import { motion } from 'framer-motion';
-
-// import transition
 import { transition1 } from '../transitions';
-
-// import cursor context
 import { CursorContext } from '../context/CursorContext';
 
 const About = () => {

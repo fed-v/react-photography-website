@@ -1,14 +1,8 @@
 import React, { useContext } from 'react';
-
-// import components
 import Socials from './Socials';
 import MobileNav from './MobileNav';
-import Logo from '../img/header/logo.svg';
-
-// import link
+import Logo from '../assets/images/header/logo.svg';
 import { Link } from 'react-router-dom';
-
-// import cursor context
 import { CursorContext } from '../context/CursorContext';
 
 const Header = () => {

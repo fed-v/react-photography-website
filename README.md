@@ -1,7 +1,6 @@
 # React photography website
 
-This is a simple React portfolio website that showcases content and route animations using Framer Motion. The site also has a custom cursor with a mask hover effect revealing negative text/image underneath. This is achieved by creating a custom hook to get the position of the mouse and assigning it to a div that is used to follow the cursor around. 
-The application uses tailwind CSS for styling.
+This is a simple React portfolio website featuring content and route animations powered by Framer Motion. It includes a custom cursor with a mask hover effect that reveals negative text/images underneath. This effect is implemented through a custom hook that tracks the mouse position and assigns it to a div that follows the cursor around. The application uses Tailwind CSS for styling.
 
 
 ![Homepage screen capture](home.png?raw=true "Homepage screen capture")

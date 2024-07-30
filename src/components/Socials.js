@@ -1,9 +1,5 @@
 import React, { useContext } from 'react';
-
-// import icons
 import { ImFacebook, ImTwitter, ImPinterest, ImInstagram, ImYoutube } from 'react-icons/im';
-
-// import cursor context
 import { CursorContext } from '../context/CursorContext';
 
 const Socials = () => {
