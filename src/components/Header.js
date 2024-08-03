@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import Socials from './Socials';
 import MobileNav from './MobileNav';
 import Logo from '../assets/images/header/logo.svg';
 import { Link } from 'react-router-dom';
@@ -35,9 +34,6 @@ const Header = () => {
         </nav>
         
       </div>
-
-      {/* socials */}
-      <Socials />
         
       {/* mobile nav */}
       <MobileNav />

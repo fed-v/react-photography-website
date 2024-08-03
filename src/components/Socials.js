@@ -10,7 +10,7 @@ const Socials = () => {
     <div 
     onMouseEnter={mouseEnterHandler}
     onMouseLeave={mouseLeaveHandler}  
-    className='hidden xl:flex ml-24'
+    className='hidden xl:flex'
     >
       <ul className='flex gap-x-4'>
         <li>
