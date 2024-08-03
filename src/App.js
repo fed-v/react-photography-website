@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import AnimRoutes from './components/AnimRoutes';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -36,6 +37,7 @@ const App = () => {
       <Router>
         <Header />
         <AnimRoutes />
+        <Footer />
       </Router>
       {/* cursor */}
       <motion.div
