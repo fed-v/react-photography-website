@@ -1,0 +1,21 @@
+.nav-link {
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #e63946;
+}
+
+.nav {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .nav {
+        display: flex;
+        gap: 1rem;
+    }
+}

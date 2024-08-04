@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import MobileNav from './MobileNav';
+import Navigation from './Navigation';
 import Logo from '../assets/images/header/logo.svg';
 import { Link } from 'react-router-dom';
 import { CursorContext } from '../context/CursorContext';
@@ -24,16 +25,7 @@ const Header = () => {
         </Link>
         
         {/* nav - initially hidden - show on desktop mode */}
-        <nav 
-          onMouseEnter={mouseEnterHandler}
-          onMouseLeave={mouseLeaveHandler} 
-          className='nav'
-        >
-          <Link to='/' className='nav-link'>Home</Link>
-          <Link to='/about' className='nav-link'>About</Link>
-          <Link to='/contact' className='nav-link'>Contact</Link>
-          <Link to='/portfolio' className='nav-link'>Portfolio</Link>
-        </nav>
+        <Navigation />
         
       </div>
         
