@@ -6,6 +6,8 @@ import { IoMdClose } from 'react-icons/io';
 import { CgMenuRight } from 'react-icons/cg';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import '../assets/styles/MobileNav.css'; // Import the CSS file
+
 
 // menu variants
 const menuVariants = {
@@ -47,11 +49,11 @@ const MobileNav = () => {
   }, [openMenu]);
 
   return (
-    <nav className='text-primary lg:hidden'>
+    <nav className='mobile-nav'>
       {/* nav open button */}
       <button
         onClick={() => setOpenMenu(true)}
-        className='text-3xl cursor-pointer'
+        className='menu-open-btn'
         aria-label="Open menu"
         aria-controls="mobile-menu"
         aria-expanded={openMenu}
@@ -64,7 +66,7 @@ const MobileNav = () => {
         variants={menuVariants}
         initial='hidden'
         animate={openMenu ? 'visible' : 'hidden'}
-        className='bg-white shadow-2xl w-full absolute top-0 right-0 max-w-xs h-screen z-20'
+        className='mobile-menu'
         id="mobile-menu"
         role="dialog"
         aria-modal="true"
@@ -73,14 +75,14 @@ const MobileNav = () => {
         {/* icon */}
         <button
           onClick={() => setOpenMenu(false)}
-          className='text-4xl absolute z-30 left-4 top-14 text-primary cursor-pointer'
+          className='menu-close-btn'
           aria-label="Close menu"
         >
           <IoMdClose />
         </button>
 
         {/* menu list */}
-        <ul className='h-full flex flex-col justify-center items-center gap-y-8 text-primary font-primary font-bold text-3xl'>
+        <ul className='menu-list'>
           <li>
             <Link to='/' onClick={() => setOpenMenu(false)}>Home</Link>
           </li>
