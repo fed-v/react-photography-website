@@ -1,0 +1,18 @@
+/* Footer Styles */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    color: var(--secondary-color);
+}
+
+.footer-socials {
+    padding: 15px 0;
+}
+
+.footer-text h1 {
+    color: var(--text-color);
+    font-size: 1em;
+}

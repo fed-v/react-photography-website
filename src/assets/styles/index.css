@@ -16,3 +16,24 @@
     @apply py-[18px] px-[50px] h-[66px] flex items-center justify-center text-base uppercase font-secondary font-semibold bg-primary text-white;
   }
 }
+
+:root {
+  /* Color Palette */
+  --primary-color: #39e6d9;
+  --secondary-color: #696c6d;
+  --text-color: #000;
+  --background-color: #eef7f9;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+  --space-xl: 64px;
+
+  /* Typography */
+  --font-family: 'YourFont', sans-serif;
+  --font-size-sm: 12px;
+  --font-size-md: 16px;
+  --font-size-lg: 24px;
+}

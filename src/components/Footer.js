@@ -1,20 +1,19 @@
 import React from 'react';
 import Socials from './Socials';
-
+import '../assets/styles/Footer.css';
 
 const Footer = () => {
+
+    const currentYear = new Date().getFullYear();
+
     return (
-        <footer className='flex flex-col justify-center items-center py-[30px] text-[#9fa6b2]'>
-            
-            <div className='py-[15px]'>
-                {/* socials */}
+        <footer className="footer">
+            <div className="footer-socials">
                 <Socials />
             </div>
-            
-            <div>
-                <h1 className='text-[#696c6d] text-[1em]'>© 2021 All rights reserved</h1>
+            <div className="footer-text">
+                <h1>© {currentYear} All rights reserved</h1>
             </div>
-
         </footer>
     );
 };
