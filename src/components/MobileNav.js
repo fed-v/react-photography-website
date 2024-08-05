@@ -1,6 +1,3 @@
-
-// Added keyboard navigation and ARIA attributes to the mobile navigation to significantly improve accessibility. 
-
 import React, { useState, useEffect, useRef } from 'react';
 import { IoMdClose } from 'react-icons/io';
 import { CgMenuRight } from 'react-icons/cg';

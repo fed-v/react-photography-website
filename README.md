@@ -8,6 +8,8 @@ This simple React portfolio website showcases animations using Framer Motion. Ke
 
 * CSS Variables: Utilizes CSS variables for scalable and maintainable styling, adhering to modern best practices in CSS architecture.
 
+* Accessible Navigation: keyboard navigation and ARIA attributes to the mobile navigation to significantly improve accessibility.
+
 
 # Screen captures
 
