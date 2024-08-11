@@ -10,6 +10,11 @@ This simple React portfolio website showcases animations using Framer Motion. Ke
 
 * Accessible Navigation: keyboard navigation and ARIA attributes to the mobile navigation to significantly improve accessibility.
 
+* Dockerfile to efficiently build the development environment.
+
+## Tech Stack
+[![My Skills](https://skillicons.dev/icons?i=react,html,css,tailwind,docker)](https://skillicons.dev)
+
 
 # Screen captures
 
@@ -37,6 +42,20 @@ Next, run your development server:
 ```bash
 npm start
 ```
+
+## Docker
+
+Create and start the development container:
+
+  ```bash
+  docker compose up --build -d
+  ```
+  
+Stop and remove the development container:
+
+  ```bash
+  docker compose down
+  ```
 
 ## Further reading
 
