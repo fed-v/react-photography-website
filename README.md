@@ -1,12 +1,12 @@
 # React photography website
 
-This simple React portfolio website showcases animations using Framer Motion. Key features include:
+This is a simple React portfolio website to demo animations using Framer Motion. Key features include:
 
 * Content and Route Animations: Smooth, interactive animations for content and route transitions powered by Framer Motion.
 
 * Custom Cursor Management: A global cursor state management system using the React Context API, enabling dynamic cursor effects based on mouse movement and viewport size. Cursor appearance changes on hover, with automatic disabling on mobile devices for a seamless user experience.
 
-* CSS Variables: Utilizes CSS variables for scalable and maintainable styling, adhering to modern best practices in CSS architecture.
+* CSS Variables: Utilizes CSS variables for scalable and maintainable styling, following modern best practices in CSS architecture.
 
 * Accessible Navigation: keyboard navigation and ARIA attributes to the mobile navigation to significantly improve accessibility.
 
